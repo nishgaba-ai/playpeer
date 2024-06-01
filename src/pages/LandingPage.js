@@ -16,7 +16,10 @@ function LandingPage() {
     <div style={{ width: "100%" }}>
       {/* hero section */}
       <Box alignSelf="stretch">
-        <Box h={{ md: "1569px", base: "auto" }} position="relative">
+        <Box
+          //  h={{ md: "1569px", base: "auto" }}
+          position="relative"
+        >
           <Box w="100%">
             <Flex
               bgGradient="linear-gradient(180deg, #000000,#200d42,#4f21a1,#a46edb)"

@@ -24,7 +24,7 @@ function SocialMedia() {
         flexDirection="column"
         alignItems="center"
         p={{ md: "", base: "20px" }}
-        style={{ marginTop: "-794px" }}
+        // style={{ marginTop: "-794px" }}
       >
         <Container px={{ md: "113px", base: "20px" }}>
           <Flex
