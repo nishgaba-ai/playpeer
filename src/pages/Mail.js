@@ -103,7 +103,7 @@ function Mail() {
           alignItems="center"
         >
           <Heading
-            letterSpacing="-3.24px"
+            letterSpacing="-1.24px"
             w={{ md: "206%", base: "100%" }}
             color="white"
             textAlign="center"
@@ -116,6 +116,7 @@ function Mail() {
             textAlign="center"
             w={{ md: "78%", base: "100%" }}
             lineHeight="23px"
+            mb="5"
           >
             Get early access and be the first to experience the future of
             iGaming.Join the waitlist by providing your email below.

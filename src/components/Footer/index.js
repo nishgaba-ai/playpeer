@@ -20,7 +20,6 @@ export default function Footer({ ...props }) {
         <Container
           // w="100%"
           style={{ width: "100%" }}
-          // background={"red"}
           display="flex"
           justifyContent="space-between"
           alignItems="center"
@@ -42,8 +41,13 @@ export default function Footer({ ...props }) {
           h="24px"
           w="24px"
           /> */}
-            <Image src="images/instss.png" h="24px" w="24px" />
-            <Image src="images/img_socials.svg" h="24px" w="24px" />
+            <Image
+              style={{ color: "white" }}
+              src="images/instagramm.png"
+              h="24px"
+              w="24px"
+            />
+            <Image src="images/link.svg" h="24px" w="24px" />
 
             {/* <Image src="images/img_socials_2.svg" h="24px" w="24px" /> */}
           </Flex>
