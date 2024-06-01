@@ -331,6 +331,7 @@ export default function DesktopPage() {
             {/* newsletter signup section */}
 
             <Image
+              className="img_emojistar"
               src="images/img_emojistar_1.png"
               h="263px"
               w="263px"
@@ -340,6 +341,7 @@ export default function DesktopPage() {
               m="auto"
             />
             <Image
+              className="img_helix2"
               src="images/img_helix2_1.png"
               h="268px"
               w="268px"

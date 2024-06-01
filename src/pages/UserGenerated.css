@@ -1,0 +1,15 @@
+/* Styles for screens below 770px */
+@media only screen and (max-width: 770px) {
+  .SimpleGrid {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Styles for screens above 770px */
+@media only screen and (min-width: 771px) {
+  .SimpleGrid {
+    width: 150%;
+    margin-left: -25%;
+  }
+}

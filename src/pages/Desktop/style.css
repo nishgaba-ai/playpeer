@@ -28,7 +28,11 @@
     margin-top: 0px;
   }
   .socialGaming {
-    margin-top: -130px;
+    margin-top: -80px;
+  }
+  .img_emojistar,
+  .img_helix2 {
+    display: none;
   }
 }
 /* Styles for screens above 770px */
@@ -36,5 +40,9 @@
 @media only screen and (min-width: 771px) {
   .desktop-landing-main {
     margin-top: -80px;
+  }
+  .img_emojistar,
+  .img_helix2 {
+    display: block;
   }
 }
