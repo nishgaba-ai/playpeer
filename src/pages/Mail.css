@@ -1,7 +1,7 @@
 /* Styles for screens below 770px */
 @media only screen and (max-width: 770px) {
   .mailDiv {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .mailButton {
     width: 90% !important;
