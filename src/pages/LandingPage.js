@@ -155,10 +155,10 @@ function LandingPage() {
             src="images/img_torus_1.png"
             h="213px"
             zIndex={5}
-            w="17%"
+            w="16%"
             position="absolute"
             left="7%"
-            top="25%"
+            top="60%"
             m="auto"
           />
           <Image
@@ -168,7 +168,7 @@ function LandingPage() {
             w="15%"
             position="absolute"
             right="6%"
-            top="26%"
+            top="61%"
             m="auto"
           />
         </Box>
