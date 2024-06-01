@@ -64,7 +64,7 @@ export default function DesktopPage() {
           {/* social media integration section */}
           <SocialMedia />
           <Box
-            h="2116px"
+            h="2316px"
             mt="153px"
             zIndex={8}
             w="92%"
