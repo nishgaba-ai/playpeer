@@ -17,4 +17,7 @@
   .mailDiv {
     margin-top: 200px;
   }
+  .hrtag {
+    display: none;
+  }
 }

@@ -153,6 +153,14 @@ function Mail() {
           </Button>
         </Flex>
       </Container>
+
+      <hr
+        style={{
+          width: "100%",
+          borderTop: "1px solid grey",
+        }}
+        className="hrtag"
+      />
     </div>
   );
 }
