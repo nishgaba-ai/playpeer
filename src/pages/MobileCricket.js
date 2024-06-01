@@ -31,8 +31,8 @@ function MobileCricket() {
       >
         <Box
           borderColor="deep_purple.900"
-          borderWidth="1px"
-          borderStyle="solid"
+          //   borderWidth="1px"
+          //   borderStyle="solid"
           w="100%"
           borderRadius="50px"
           p={{ base: "15px", md: "20px" }}
