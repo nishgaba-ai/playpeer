@@ -23,7 +23,7 @@ export default function Footer({ ...props }) {
           // background={"red"}
           display="flex"
           justifyContent="space-between"
-          // alignItems="center"
+          alignItems="center"
           maxw="1083px"
           gap="20px"
           px="0px"

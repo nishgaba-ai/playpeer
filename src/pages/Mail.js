@@ -117,8 +117,8 @@ function Mail() {
             w={{ md: "78%", base: "100%" }}
             lineHeight="23px"
           >
-            Celebrate the joy of accomplishment with an app designed to track
-            your progress and motivate your efforts.
+            Get early access and be the first to experience the future of
+            iGaming.Join the waitlist by providing your email below.
           </Text>
         </Flex>
         <Flex
