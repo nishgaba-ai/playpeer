@@ -122,7 +122,7 @@ function LandingPage() {
             <Image
               src="images/Ellipse_2.png"
               w="100%"
-              style={{ marginTop: "-97px" }}
+              style={{ marginTop: "-107px" }}
             />
           </Box>
           <Image

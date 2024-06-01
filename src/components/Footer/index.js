@@ -7,7 +7,7 @@ export default function Footer({ ...props }) {
       <Flex
         {...props}
         as="footer"
-        mt="78px"
+        // mt="78px"
         borderColor="white.A700 33"
         borderTopwidth="1px"
         borderstyle="solid"
@@ -42,7 +42,7 @@ export default function Footer({ ...props }) {
           h="24px"
           w="24px"
           /> */}
-            <Image src="images/icons8-linkedin-30.png" h="24px" w="24px" />
+            <Image src="images/instss.png" h="24px" w="24px" />
             <Image src="images/img_socials.svg" h="24px" w="24px" />
 
             {/* <Image src="images/img_socials_2.svg" h="24px" w="24px" /> */}

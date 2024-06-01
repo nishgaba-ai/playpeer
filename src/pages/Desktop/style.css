@@ -34,6 +34,9 @@
   .img_helix2 {
     display: none;
   }
+  .desktop-landing-box {
+    height: 2550px;
+  }
 }
 /* Styles for screens above 770px */
 
@@ -44,5 +47,8 @@
   .img_emojistar,
   .img_helix2 {
     display: block;
+  }
+  .desktop-landing-box {
+    height: 2200px;
   }
 }

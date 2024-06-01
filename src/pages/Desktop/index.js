@@ -66,7 +66,7 @@ export default function DesktopPage() {
           {/* social media integration section */}
           <SocialMedia />
           <Box
-            h="2516px"
+            className="desktop-landing-box"
             mt="153px"
             zIndex={8}
             w="92%"
@@ -168,7 +168,7 @@ export default function DesktopPage() {
               h="263px"
               w="263px"
               position="absolute"
-              bottom="4%"
+              bottom="10%"
               left="59.00px"
               m="auto"
             />
@@ -178,10 +178,10 @@ export default function DesktopPage() {
               h="268px"
               w="268px"
               position="absolute"
-              bottom="-95"
-              right="74px"
+              bottom="5%"
+              right="99.00px"
               m="auto"
-              style={{ marginBottom: "30px" }}
+              // style={{ marginBottom: "30px" }}
             />
           </Box>
           {/* footer section */}
