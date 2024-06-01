@@ -14,7 +14,11 @@ import {
   Box,
 } from "@chakra-ui/react";
 import React, { Suspense } from "react";
+import "./style.css";
+
 import LandingPage from "pages/LandingPage";
+import MobileLanding from "pages/MobileLanding";
+
 import SocialMedia from "pages/SocialMedia";
 import UserGenerated from "pages/UserGenerated";
 import Mail from "pages/Mail";
@@ -27,12 +31,7 @@ const data = [
 
 export default function DesktopPage() {
   return (
-    <div
-      style={{
-        // background: "red",
-        marginTop: "-80px",
-      }}
-    >
+    <div className="desktop-landing-main">
       <Helmet>
         <title>Peer2Play: Revolutionize Your Gaming Experience</title>
         <meta
@@ -54,7 +53,12 @@ export default function DesktopPage() {
             <Header />
 
             {/* hero section */}
-            <LandingPage />
+            <div style={{ width: "100%" }} className="desktop-landing">
+              <LandingPage />
+            </div>
+            <div style={{ width: "100%" }} className="mobile-landing">
+              <MobileLanding />
+            </div>
           </Flex>
 
           {/* social media integration section */}

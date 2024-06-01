@@ -1,0 +1,79 @@
+/* Styles for screens below 770px */
+@media only screen and (max-width: 770px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    margin-right: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .DLogo {
+    display: none;
+  }
+  .MLogo {
+    display: block;
+    position: relative;
+    left: -10%;
+  }
+  .LogoContainer {
+    /* display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "100%",
+    display: "flex",
+    alignItems: "center", */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Styles for screens above 770px */
+@media only screen and (min-width: 771px) {
+  .LogoContainer {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+  }
+
+  .MLogo {
+    display: none;
+  }
+  .DLogo {
+    display: block;
+  }
+  .logo {
+    /* margin-left: 25px; */
+  }
+
+  .menu {
+    /* margin-right: 25px; */
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

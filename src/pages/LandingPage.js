@@ -16,10 +16,7 @@ function LandingPage() {
     <div style={{ width: "100%" }}>
       {/* hero section */}
       <Box alignSelf="stretch">
-        <Box
-          //  h={{ md: "1569px", base: "auto" }}
-          position="relative"
-        >
+        <Box position="relative">
           <Box w="100%">
             <Flex
               bgGradient="linear-gradient(180deg, #000000,#200d42,#4f21a1,#a46edb)"
@@ -54,21 +51,13 @@ function LandingPage() {
                     m="auto"
                     flexDirection={{ md: "row", base: "column" }}
                   >
-                    {/* <Image
-                            // src="images/img_cursor_2.png"
-                            // h="200px"
-                            // zIndex={1}
-                            // w={{ md: "200px", base: "100%" }}
-                            // position="relative"
-                          /> */}
                     <Flex
-                      ml={{ md: "-6px", base: "0px" }}
                       position="relative"
                       flex={1}
                       flexDirection="column"
                       alignItems="center"
                       alignSelf="stretch"
-                      style={{ marginLeft: "23%" }}
+                      style={{ width: "100%", marginLeft: "23%" }}
                     >
                       <Heading
                         size="md"
@@ -100,7 +89,6 @@ function LandingPage() {
                     </Flex>
                   </Flex>
                   <Image
-                    // src="images/img_cursor_1.png"
                     src="images/img_cursor_2.png"
                     h="200px"
                     zIndex={2}
@@ -120,7 +108,6 @@ function LandingPage() {
                   w={{ md: "23%", base: "100%" }}
                 >
                   <Image
-                    // src="images/img_message_2.png"
                     src="images/img_message_1.png"
                     h="200px"
                     w="200px"
@@ -129,24 +116,11 @@ function LandingPage() {
                     top="0.00px"
                     m="auto"
                   />
-                  {/* <Image
-                          src="images/img_message_1.png"
-                          h="200px"
-                          w="200px"
-                          position="absolute"
-                          bottom="0.00px"
-                          left="0.00px"
-                          m="auto"
-                        /> */}
                 </Box>
               </Flex>
             </Flex>
             <Image
               src="images/Ellipse_2.png"
-              // h={{ md: "1014px", base: "auto" }}
-              // mt="-175px"
-              // zIndex={4}
-              // position="relative"
               w="100%"
               style={{ marginTop: "-97px" }}
             />

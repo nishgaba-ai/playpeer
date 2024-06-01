@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Button,
   Link,
@@ -6,39 +7,55 @@ import {
   ListItem,
   Flex,
   Image,
+  Box,
 } from "@chakra-ui/react";
-import React from "react";
+import "./index.css";
 
 export default function Header({ ...props }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <Flex
-      {...props}
-      w={{ md: "87%", base: "100%" }}
-      justifyContent="space-between"
-      alignItems="center"
-      gap="20px"
-      p="20px"
-      flexDirection={{ base: "column", sm: "row" }}
-      as="header"
-    >
-      <Image
-        src="images/img_header_logo.png"
-        h="51px"
-        ml={{ base: "0px", sm: "25px" }}
-        w="151px"
-        fit="contain"
-      />
+    <Flex {...props} as="header" className="LogoContainer">
+      <div className="DLogo">
+        <Image
+          src="images/img_header_logo.png"
+          h="51px"
+          w="151px"
+          fit="contain"
+          ml={{ base: "0px", sm: "25px" }}
+          mb={{ base: "20px", sm: "0" }}
+        />
+      </div>
+      <div className="MLogo">
+        <Image
+          src="images/Default.png"
+          h="51px"
+          w="151px"
+          fit="contain"
+          ml={{ base: "0px", sm: "25px" }}
+          mb={{ base: "20px", sm: "0" }}
+        />
+      </div>
+
       <Flex
-        mr={{ base: "0px", sm: "25px" }}
         gap="24px"
         alignItems="center"
         flexDirection={{ base: "column", sm: "row" }}
+        mr={{ base: "0px", sm: "25px" }}
+        display={{ base: isMenuOpen ? "flex" : "none", sm: "flex" }}
       >
         <UnorderedList
           styleType="none"
           gap="24px"
           display="flex"
           flexwrap="wrap"
+          m={0}
+          p={0}
+          flexDirection={{ base: "column", sm: "row" }}
         >
           <ListItem>
             <Link href="#">
@@ -68,12 +85,22 @@ export default function Header({ ...props }) {
           letterSpacing="-0.32px"
           fontFamily="Inter"
           fontweight={500}
-          minw="143px"
+          minw={{ base: "unset", sm: "143px" }}
           borderRadius="10px"
         >
           Connect Wallet
         </Button>
       </Flex>
+      {/* Hamburger Menu Icon */}
+      <Box
+        display={{ base: "block", sm: "none" }}
+        cursor="pointer"
+        color="white"
+        fontSize="24px"
+        onClick={toggleMenu}
+      >
+        &#9776;
+      </Box>
     </Flex>
   );
 }

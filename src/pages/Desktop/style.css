@@ -1,0 +1,35 @@
+/* For desktop */
+/* .desktop-landing {
+  display: block;
+} */
+
+@media (max-width: 770px) {
+  /* For mobile */
+  .desktop-landing {
+    display: none;
+  }
+}
+
+/* For mobile */
+.mobile-landing {
+  display: none;
+}
+
+@media (max-width: 770px) {
+  /* For mobile */
+  .mobile-landing {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .desktop-landing-main {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 771px) {
+  .desktop-landing-main {
+    margin-top: -80px;
+  }
+}
