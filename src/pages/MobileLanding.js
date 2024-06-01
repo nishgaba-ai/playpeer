@@ -15,7 +15,7 @@ function LandingPage() {
         <Box textAlign="center">
           <Heading
             size="md"
-            letterSpacing="-6.60px"
+            letterSpacing="-1.60px"
             fontSize={{ base: "48px", md: "128.04px" }}
             color="white"
             mb="10px"

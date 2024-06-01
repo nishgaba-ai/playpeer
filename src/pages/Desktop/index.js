@@ -92,6 +92,7 @@ export default function DesktopPage() {
                 alignSelf="stretch"
                 flexDirection="column"
                 alignItems="center"
+                className="socialGaming"
               >
                 <Flex
                   gap="11px"
@@ -114,7 +115,7 @@ export default function DesktopPage() {
                       style={{
                         color: "white",
                         textAlign: "center",
-                        marginTop: "-50px",
+                        marginTop: "-80px",
                       }}
                     >
                       A Social Gaming Platform

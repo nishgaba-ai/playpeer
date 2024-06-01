@@ -11,6 +11,7 @@ import {
   Container,
   Box,
 } from "@chakra-ui/react";
+import "./SocialMedia.css";
 
 function SocialMedia() {
   return (
@@ -63,26 +64,20 @@ function SocialMedia() {
           alignSelf="stretch"
           flexDirection={{ md: "row", base: "column" }}
         >
-          {/* <Suspense fallback={<div>Loading feed...</div>}>
-                {data.map((d, index) => (
-                  <Button
-                    key={"socialButtonsList" + index}
-                    size="1g"
-                    colorscheme="black_900"
-                    letterSpacing="-0.56px"
-                    fontweight={700}
-                    bordercolor="white.A700_33"
-                    borderwidth="1px"
-                    borderstyle="solid"
-                    W="100%"
-                    borderRadius="10px"
-                    px={{ base: "20px", sm: "" }}
-                  >
-                    Twitter{" "}
-                  </Button>
-                ))}
-              </Suspense> */}
-          <Image src="images/Frame_124.png" h="159px" w="52%" m="auto" />
+          <Image
+            className="sm-window"
+            src="images/Frame_124.png"
+            h="159px"
+            w="52%"
+            ml="26%"
+          />
+          <Image
+            className="sm-mobile"
+            src="images/Frame_124.png"
+            h="89px"
+            w="72%"
+            m="auto"
+          />
         </Flex>
       </Flex>
     </div>
