@@ -31,7 +31,7 @@
   .MLogo {
     display: block;
     position: relative;
-    left: -10%;
+    left: -6%;
   }
   .LogoContainer {
     /* display: "flex",
@@ -61,6 +61,8 @@
 
   .MLogo {
     display: none;
+    /* margin-left: 25px; */
+    /* padding-right: 100px; */
   }
   .DLogo {
     display: block;

@@ -22,7 +22,8 @@ export default function Header({ ...props }) {
     <Flex {...props} as="header" className="LogoContainer">
       <div className="DLogo">
         <Image
-          src="images/img_header_logo.png"
+          // src="images/img_header_logo.png"
+          src="images/header_logo1.png"
           h="51px"
           w="151px"
           fit="contain"
@@ -32,9 +33,10 @@ export default function Header({ ...props }) {
       </div>
       <div className="MLogo">
         <Image
-          src="images/Default.png"
-          h="51px"
-          w="151px"
+          // src="images/Default.png"
+          src="images/header_logo1.png"
+          h="31px"
+          w="91px"
           fit="contain"
           ml={{ base: "0px", sm: "25px" }}
           mb={{ base: "20px", sm: "0" }}
