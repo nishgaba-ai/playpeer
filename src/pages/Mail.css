@@ -10,14 +10,26 @@
     display: flex;
     flex-direction: column;
   }
+  .mailButtonsub {
+    display: none;
+  }
+  .mailButtonAccess {
+    display: block;
+  }
 }
 
 /* Styles for screens above 770px */
 @media only screen and (min-width: 771px) {
+  .mailButtonAccess {
+    display: none;
+  }
   .mailDiv {
     margin-top: 200px;
   }
   .hrtag {
     display: none;
+  }
+  .mailButtonsub {
+    display: block;
   }
 }

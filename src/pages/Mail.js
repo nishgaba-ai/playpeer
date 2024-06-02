@@ -139,18 +139,35 @@ function Mail() {
             placeholder={"name@email.com"}
             type="email"
           />
-          <Button
-            size="xs"
-            letterSpacing="-0.32px"
-            fontFamily="Inter"
-            fontWeight={500}
-            minW="113px"
-            borderRadius="10px"
-            p={{ base: "10px", sm: "20px" }}
-            className="mailButton"
-          >
-            Get access
-          </Button>
+          <div className="mailButtonAccess" style={{ width: "100%" }}>
+            <Button
+              size="xs"
+              letterSpacing="-0.32px"
+              fontFamily="Inter"
+              fontWeight={500}
+              minW="113px"
+              borderRadius="10px"
+              p={{ base: "10px", sm: "20px" }}
+              className="mailButton"
+              ml="5%"
+            >
+              Get access
+            </Button>
+          </div>
+          <div className="mailButtonsub" style={{ width: "100%" }}>
+            <Button
+              size="xs"
+              letterSpacing="-0.32px"
+              fontFamily="Inter"
+              fontWeight={500}
+              minW="113px"
+              borderRadius="10px"
+              p={{ base: "10px", sm: "20px" }}
+              className="mailButton"
+            >
+              Subscribe{" "}
+            </Button>
+          </div>
         </Flex>
       </Container>
 
