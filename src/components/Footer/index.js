@@ -34,22 +34,32 @@ export default function Footer({ ...props }) {
           </Text>
 
           <Flex gap="11px">
-            <Image src="images/img_socials.svg" h="24px" w="24px" />
-            {/* <Image src="images/img_socials_white_a700.svg" h="24px" w="24px" />
-          <Image
-          src="images/img_socials_white_a700_24x24.svg"
-          h="24px"
-          w="24px"
-          /> */}
-            <Image
-              style={{ color: "white" }}
-              src="images/instagramm.png"
-              h="24px"
-              w="24px"
-            />
-            <Image src="images/link.svg" h="24px" w="24px" />
-
-            {/* <Image src="images/img_socials_2.svg" h="24px" w="24px" /> */}
+            <a
+              href="https://x.com/Peer2playAI"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src="images/img_socials.svg" h="24px" w="24px" />
+            </a>
+            <a
+              href="https://discord.gg/fN4MFFxC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                style={{ color: "white" }}
+                src="images/instagramm.png"
+                h="24px"
+                w="24px"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src="images/link.svg" h="24px" w="24px" />
+            </a>
           </Flex>
         </Container>
       </Flex>

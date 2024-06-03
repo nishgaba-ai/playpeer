@@ -1,17 +1,11 @@
 import React from "react";
-import {
-  Image,
-  Button,
-  Input,
-  Flex,
-  Text,
-  Heading,
-  IconButton,
-  SimpleGrid,
-  Container,
-  Box,
-} from "@chakra-ui/react";
+import { useNetwork } from "wagmi";
+import { Image, Button, Flex, Text, Heading, Box } from "@chakra-ui/react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+
 function LandingPage() {
+  const { chain } = useNetwork();
+
   return (
     <div style={{ width: "100%" }}>
       {/* hero section */}
@@ -75,17 +69,20 @@ function LandingPage() {
                       >
                         Connect, Invite, Challenge & Earn
                       </Text>
-                      <Button
-                        size="md"
-                        mt="31px"
-                        letterSpacing="-0.32px"
-                        fontFamily="Inter"
-                        fontweight={500}
-                        minw="153px"
-                        borderRadius="10px"
-                      >
-                        Connect Wallet
-                      </Button>
+                      {/* {!chain && (
+                        <Button
+                          size="md"
+                          mt="31px"
+                          letterSpacing="-0.32px"
+                          fontFamily="Inter"
+                          fontWeight={500}
+                          minW="153px"
+                          borderRadius="10px"
+                          css={{ cursor: "default" }}
+                        >
+                          Connect your Wallet
+                        </Button>
+                      )} */}
                     </Flex>
                   </Flex>
                   <Image
