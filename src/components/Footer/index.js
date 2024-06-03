@@ -1,9 +1,15 @@
 import { Image, Flex, Text, Container } from "@chakra-ui/react";
 import React from "react";
+import img1 from "../../assets/images/discord.webp";
 
 export default function Footer({ ...props }) {
   return (
-    <div style={{ width: "100%" }}>
+    <div
+      style={{
+        width: "100%",
+        marginTop: "200px",
+      }}
+    >
       <Flex
         {...props}
         as="footer"
@@ -19,9 +25,9 @@ export default function Footer({ ...props }) {
       >
         <Container
           // w="100%"
-          style={{ width: "100%" }}
+          style={{ width: "100%", transform: "translateX(-10%)" }}
           display="flex"
-          justifyContent="space-between"
+          justifyContent="center"
           alignItems="center"
           maxw="1083px"
           gap="20px"
@@ -46,19 +52,7 @@ export default function Footer({ ...props }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
-                style={{ color: "white" }}
-                src="images/instagramm.png"
-                h="24px"
-                w="24px"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image src="images/link.svg" h="24px" w="24px" />
+              <Image style={{ color: "white" }} src={img1} h="28px" w="28px" />
             </a>
           </Flex>
         </Container>

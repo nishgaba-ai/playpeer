@@ -89,7 +89,46 @@ import {
   Container,
 } from "@chakra-ui/react";
 import "./Mail.css";
+
+import { useRef, useEffect, useState } from "react";
+import axios from "axios";
+
 function Mail() {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState("");
+
+  const handleInputChange = (e) => {
+    setEmail(e.target.value);
+  };
+  // console.log("email",email)
+
+  const handleSubmit = async () => {
+    const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/; // Basic email validation
+
+    if (!emailRegex.test(email)) {
+      return alert("Invalid email format");
+    }
+
+    if (!email) {
+      return alert("this field is required");
+    }
+    try {
+      setLoading(true);
+      const response = await axios.post(
+        `https://newsletter-backend-ten.vercel.app/email`,
+        { email }
+      );
+      console.log(response.data); // Log response data
+      alert(response.data.message);
+      // setEmail("");
+    } catch (error) {
+      // console.log("Error message:", error.response.data.message);
+      alert(error.response.data.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div style={{ width: "100%" }}>
       <Container maxW="container.xl" p={4}>
@@ -138,6 +177,10 @@ function Mail() {
             className="mailButton"
             placeholder={"name@email.com"}
             type="email"
+            id="email"
+            name="email"
+            value={email} // Bind value to state
+            onChange={handleInputChange}
           />
           <div className="mailButtonAccess" style={{ width: "100%" }}>
             <Button
@@ -164,8 +207,9 @@ function Mail() {
               borderRadius="10px"
               p={{ base: "10px", sm: "20px" }}
               className="mailButton"
+              onClick={handleSubmit}
             >
-              Subscribe{" "}
+              {loading ? "subscribing" : "Subscribe"}
             </Button>
           </div>
         </Flex>

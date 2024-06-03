@@ -59,29 +59,7 @@ export default function Header({ ...props }) {
           m={0}
           p={0}
           flexDirection={{ base: "column", sm: "row" }}
-        >
-          <ListItem>
-            <Link href="#">
-              <Text color="white.A700_99" letterSpacing="-0.16px">
-                About
-              </Text>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="#">
-              <Text color="white.A700_99" letterSpacing="-0.16px">
-                Features
-              </Text>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="#">
-              <Text color="white.A700_99" letterSpacing="-0.16px">
-                Help
-              </Text>
-            </Link>
-          </ListItem>
-        </UnorderedList>
+        ></UnorderedList>
         <ConnectButton className="w-full " />
       </Flex>
       {/* Hamburger Menu Icon */}
