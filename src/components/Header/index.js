@@ -1,3 +1,4 @@
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import React, { useState } from "react";
 import {
   Button,
@@ -81,17 +82,7 @@ export default function Header({ ...props }) {
             </Link>
           </ListItem>
         </UnorderedList>
-        <Button
-          size="xs"
-          colorscheme="blue_gray_400"
-          letterSpacing="-0.32px"
-          fontFamily="Inter"
-          fontweight={500}
-          minw={{ base: "unset", sm: "143px" }}
-          borderRadius="10px"
-        >
-          Connect Wallet
-        </Button>
+        <ConnectButton className="w-full " />
       </Flex>
       {/* Hamburger Menu Icon */}
       <Box
