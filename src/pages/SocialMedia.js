@@ -67,15 +67,15 @@ function SocialMedia() {
           <Image
             className="sm-window"
             src="images/Frame_124.png"
-            h="159px"
-            w="52%"
+            h="15%"
+            w="56%"
             ml="26%"
           />
           <Image
             className="sm-mobile"
             src="images/Frame_124.png"
-            h="89px"
-            w="72%"
+            h="77px"
+            w="85%"
             m="auto"
           />
         </Flex>
