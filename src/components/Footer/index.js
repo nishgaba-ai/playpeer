@@ -35,7 +35,9 @@ export default function Footer({ ...props }) {
           mx="auto"
           flexDirection={{ base: "column", sm: "row" }}
         >
-          <Text size="s" color="gray.600" alignSelf="end">
+          <Text size="s" color="gray.600" alignSelf="end"
+          style={{  fontFamily: 'Inter, sans-serif' }}
+          >
             @ 2024 PeerToPlay. All rights reserved
           </Text>
 

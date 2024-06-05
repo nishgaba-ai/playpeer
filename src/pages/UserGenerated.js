@@ -177,6 +177,10 @@ import "./UserGenerated.css";
 function UserGenerated() {
   return (
     <div style={{ width: "100%" }}>
+        <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
       <Container maxW="container.xl" p={4}>
         <Heading
           as="h3"
@@ -184,6 +188,7 @@ function UserGenerated() {
           textAlign="center"
           color="white"
           mb={6}
+          style={{  fontFamily: 'DM Sans, sans-serif' }}
         >
           User Generated Content
         </Heading>
@@ -222,8 +227,9 @@ function UserGenerated() {
               size="sm"
               as="h4"
               letterSpacing="-0.56px"
-              textAlign="center"
-              color="white"
+              // textAlign="center"
+              // color="white"
+              style={{ color: "white", fontFamily: 'DM Sans, sans-serif' ,textAlign: "center"}}
             >
               INFLUENCERS OR USER MANAGED TOURNAMENTS
             </Heading>
@@ -255,8 +261,7 @@ function UserGenerated() {
               size="sm"
               as="h5"
               letterSpacing="-0.56px"
-              textAlign="center"
-              color="white"
+              style={{ color: "white", fontFamily: 'DM Sans, sans-serif' ,textAlign: "center"}}
             >
               USERS GENERATED CONTENTS
             </Heading>
@@ -288,10 +293,10 @@ function UserGenerated() {
               size="sm"
               as="h6"
               letterSpacing="-0.56px"
-              textAlign="center"
-              color="white"
+              style={{ color: "white", fontFamily: 'DM Sans, sans-serif' ,textAlign: "center"}}
             >
-              Multiplayer Gaming Platform
+              MULTIPLAYER GAMING PLATFORM
+              {/* Multiplayer Gaming Platform */}
             </Heading>
           </Flex>
 
@@ -322,10 +327,9 @@ function UserGenerated() {
                 size="sm"
                 as="h6"
                 letterSpacing="-0.56px"
-                textAlign="center"
-                color="white"
+                style={{ color: "white", fontFamily: 'DM Sans, sans-serif' ,textAlign: "center"}}
               >
-                Social Hubs
+               SOCIAL HUBS
               </Heading>
             </Flex>
           </Flex>

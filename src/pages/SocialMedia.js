@@ -130,6 +130,10 @@ import "./SocialMedia.css";
 function SocialMedia() {
   return (
     <div style={{ width: "100%" }}>
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
       <Flex
         gap={{ base: "33px", sm: "66px" }}
         zIndex={7}
@@ -150,10 +154,8 @@ function SocialMedia() {
             <Heading
               letterSpacing="-3.24px"
               w={{ md: "206%", base: "100%" }}
-              style={{
-                color: "white",
-                textAlign: "center",
-              }}
+             
+              style={{ color: "white",textAlign: "center", fontFamily: 'DM Sans, sans-serif' }}
             >
               Connect Your Social Media
             </Heading>
@@ -163,7 +165,7 @@ function SocialMedia() {
               textAlign="center"
               w={{ md: "86%", base: "100%" }}
               lineHeight="31px"
-              style={{ color: "white" }}
+              style={{ color: "white" , fontFamily: 'Inter, sans-serif'}}
             >
               Enjoy customizable lists, team work tools, and smart tracking all
               in one place. Set tasks, get reminders, and see your progress

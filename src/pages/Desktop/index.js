@@ -34,6 +34,10 @@ const data = [
 export default function DesktopPage() {
   return (
     <div className="desktop-landing-main">
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
       <Helmet>
         <title>Peer2Play: Revolutionize Your Gaming Experience</title>
         <meta
@@ -118,6 +122,7 @@ export default function DesktopPage() {
                         color: "white",
                         textAlign: "center",
                         marginTop: "-80px",
+                        fontFamily: 'DM Sans, sans-serif'
                       }}
                     >
                       A Social Gaming Platform
@@ -128,7 +133,7 @@ export default function DesktopPage() {
                     letterSpacing="-0.79px"
                     textAlign="center"
                     lineHeight="31px"
-                    style={{ color: "white" }}
+                    style={{ color: "white",fontFamily: 'Inter' }}
                   >
                     PeerToPlay has the potential to revolutionize social gaming
                     by creating more interactive, community-driven, and secure

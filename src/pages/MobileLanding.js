@@ -4,6 +4,10 @@ import { Image, Button, Text, Heading, Box } from "@chakra-ui/react";
 function LandingPage() {
   return (
     <Box style={{ width: "100%" }}>
+        <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
       {/* Hero section */}
       <Box
         bgGradient="linear-gradient(180deg, #000000,#200d42,#4f21a1,#a46edb)"
@@ -19,10 +23,13 @@ function LandingPage() {
             fontSize={{ base: "48px", md: "128.04px" }}
             color="white"
             mb="10px"
+            style={{  fontFamily: 'DM Sans, sans-serif'}}
           >
             Peer2Play
           </Heading>
-          <Text fontSize="16px" letterSpacing="-0.79px" color="white" mb="20px">
+          <Text fontSize="16px" letterSpacing="-0.79px" color="white" mb="20px"
+          style={{  fontFamily: 'Inter, sans-serif' }}
+          >
             Connect, Invite, Challenge & Earn
           </Text>
           <Button
@@ -32,6 +39,7 @@ function LandingPage() {
             fontWeight={500}
             minWidth="153px"
             borderRadius="10px"
+            style={{  fontFamily: 'Inter, sans-serif' }}
           >
             Connect Wallet
           </Button>

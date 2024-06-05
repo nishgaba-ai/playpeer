@@ -8,6 +8,10 @@ function LandingPage() {
 
   return (
     <div style={{ width: "100%" }}>
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
       {/* hero section */}
       <Box alignSelf="stretch">
         <Box position="relative">
@@ -58,31 +62,20 @@ function LandingPage() {
                         as="h1"
                         letterSpacing="-9.60px"
                         fontSize="128.04px"
-                        style={{ color: "white" }}
+                        // style={{ color: "white" }}
+                        style={{ color: "white", fontFamily: 'DM Sans, sans-serif' }}
+                        // fontFamily={}
                       >
                         Peer2Play
                       </Heading>
                       <Text
                         size="x1"
                         letterSpacing="-0.79px"
-                        style={{ color: "white" }}
+                        // fontFamily="Inter"
+                        style={{ color: "white", fontFamily: 'Inter, sans-serif' }}
                       >
                         Connect, Invite, Challenge & Earn
                       </Text>
-                      {/* {!chain && (
-                        <Button
-                          size="md"
-                          mt="31px"
-                          letterSpacing="-0.32px"
-                          fontFamily="Inter"
-                          fontWeight={500}
-                          minW="153px"
-                          borderRadius="10px"
-                          css={{ cursor: "default" }}
-                        >
-                          Connect your Wallet
-                        </Button>
-                      )} */}
                     </Flex>
                   </Flex>
                   <Image
