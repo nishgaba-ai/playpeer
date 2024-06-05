@@ -111,9 +111,12 @@
 
 
 import React from "react";
-import x from "../assets/images/xx.png";
+import x from "../assets/images/xx.png"
+
 import telegram from "../assets/images/tele.png";
+
 import discord from "../assets/images/discordd.png";
+
 import {
   Image,
   Flex,
@@ -203,7 +206,7 @@ function SocialMedia() {
               }}
             />
           </Link>
-          <Link href="" isExternal>
+          <Link href=" " isExternal>
             <Image
               src={telegram}
               alt="Telegram"
