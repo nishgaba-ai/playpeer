@@ -131,6 +131,10 @@ function Mail() {
 
   return (
     <div style={{ width: "100%" }}>
+        <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
       <Container maxW="container.xl" p={4}>
         <Flex
           className="mailDiv"
@@ -144,8 +148,7 @@ function Mail() {
           <Heading
             letterSpacing="-1.24px"
             w={{ md: "206%", base: "100%" }}
-            color="white"
-            textAlign="center"
+            style={{ color: "white", fontFamily: 'DM Sans, sans-serif' ,textAlign: "center"}}
           >
             Get access to Subscribe
           </Heading>
@@ -156,6 +159,7 @@ function Mail() {
             w={{ md: "78%", base: "100%" }}
             lineHeight="23px"
             mb="5"
+            style={{  fontFamily: 'Inter, sans-serif' }}
           >
             Get early access and be the first to experience the future of
             iGaming.Join the waitlist by providing your email below.
@@ -208,6 +212,7 @@ function Mail() {
               p={{ base: "10px", sm: "20px" }}
               className="mailButton"
               onClick={handleSubmit}
+              style={{  fontFamily: 'Inter, sans-serif' }}
             >
               {loading ? "subscribing" : "Subscribe"}
             </Button>

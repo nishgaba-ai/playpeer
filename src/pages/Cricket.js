@@ -21,6 +21,10 @@ function Cricket() {
         justifyContent: "center",
       }}
     >
+        <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
       <Flex
         boxShadow="xs"
         w={{ md: "85%", base: "100%" }}
@@ -104,10 +108,10 @@ function Cricket() {
                   <Heading
                     letterSpacing="-0.24px"
                     // w={{ md: "206%", base: "100%" }}
-                    style={{
-                      color: "white",
-                      textAlign: "center",
-                    }}
+                   
+                      
+                      style={{ color: "white", fontFamily: 'DM Sans, sans-serif' ,textAlign: "center"}}
+                    
                     fontWeight={300}
                   >
                     Decentralized
@@ -115,10 +119,7 @@ function Cricket() {
                   <Heading
                     letterSpacing="-0.24px"
                     // w={{ md: "206%", base: "100%" }}
-                    style={{
-                      color: "white",
-                      textAlign: "center",
-                    }}
+                    style={{ color: "white", fontFamily: 'DM Sans, sans-serif' ,textAlign: "center"}}
                     fontWeight={300}
                   >
                     Cricket League
@@ -127,7 +128,8 @@ function Cricket() {
                     size="lg"
                     w={{ md: "89%", base: "100%" }}
                     lineHeight="108.19%"
-                    color={"white"}
+                   
+                    style={{ color: "white", fontFamily: 'Inter'}}
                   >
                     Free-2-Play & Play to Earn Blockchain game. It is an ideal
                     game in the sports tycoon simulation game. This game is one
@@ -186,6 +188,7 @@ function Cricket() {
                         mb="70px"
                         p="2"
                         borderRadius={"50px"}
+                        style={{  fontFamily: 'Inter, sans-serif' }}
                       >
                         Coming Soon
                       </Text>
