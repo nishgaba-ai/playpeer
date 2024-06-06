@@ -39,7 +39,7 @@ function LandingPage() {
             fontWeight={500}
             minWidth="153px"
             borderRadius="10px"
-            style={{  fontFamily: 'Inter, sans-serif' }}
+            style={{  fontFamily: 'DM Sans, sans-serif' }}
           >
             Connect Wallet
           </Button>

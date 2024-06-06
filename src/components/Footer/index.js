@@ -1,6 +1,8 @@
 import { Image, Flex, Text, Container } from "@chakra-ui/react";
 import React from "react";
 import img1 from "../../assets/images/discord.webp";
+import img2 from "../../assets/images/tg.png";
+import { FaTelegramPlane } from "react-icons/fa";
 
 export default function Footer({ ...props }) {
   return (
@@ -55,6 +57,14 @@ export default function Footer({ ...props }) {
               rel="noopener noreferrer"
             >
               <Image style={{ color: "white" }} src={img1} h="28px" w="28px" />
+            </a>
+            <a
+              href="https://t.me/+_jN0qLddLrw0ZjY1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTelegramPlane  style={{height:"28px", width:"28px",color:"white"}}/>
+              {/* <Image style={{ color: "white" }} src={img2} h="28px" w="28px" /> */}
             </a>
           </Flex>
         </Container>
