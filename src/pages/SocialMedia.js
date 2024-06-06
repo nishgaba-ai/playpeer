@@ -208,7 +208,7 @@ function SocialMedia() {
               }}
             />
           </Link>
-          <Link href=" " isExternal>
+          <Link href="https://t.me/+_jN0qLddLrw0ZjY1" isExternal>
             <Image
               src={telegram}
               alt="Telegram"
