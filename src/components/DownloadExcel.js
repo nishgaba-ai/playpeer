@@ -5,6 +5,8 @@ import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import "./Excel.css";
 
 const Excel = () => {
+    const apiPassword = process.env.REACT_APP_PASSWORD; 
+    // console.log("apiPassword", apiPassword);
   const [excel, setExcel] = useState([]);
   const [loading, setLoading] = useState(true);
   const [password, setPassword] = useState("");
@@ -33,7 +35,7 @@ const Excel = () => {
   };
 
   const verifyPasswordAndDownload = () => {
-    if (password === "peerplay@excel") {
+    if (password === apiPassword) {
       // Password correct, proceed to download Excel
       const workbook = XLSX.utils.book_new();
       const worksheet = XLSX.utils.json_to_sheet(
